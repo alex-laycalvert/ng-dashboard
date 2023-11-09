@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "build": "tsc",
+    "dev": "nodemon ./src/index.ts"
+  },
+  "keywords": [],
+  "author": "Alexander Lay-Calvert",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^8.4.1",
+    "fastify": "^4.24.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.2.2"
+  }
+}

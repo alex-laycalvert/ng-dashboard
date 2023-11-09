@@ -1,0 +1,13 @@
+<main class="main">
+    <div>
+        <button (click)="changeInterval('daily')">Daily</button>
+        <button (click)="changeInterval('monthly')">Monthly</button>
+        <button (click)="changeInterval('yearly')">Yearly</button>
+    </div>
+    <div>Total: {{ data?.total }}</div>
+    <div class="chart-container">
+        <canvas id="reportChart">{{ chart }}</canvas>
+    </div>
+</main>
+
+<router-outlet></router-outlet>
